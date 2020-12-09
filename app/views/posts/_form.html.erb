@@ -1,0 +1,18 @@
+
+<div>
+  <%= form_with model: post, local: true do |f| %>
+    <div>
+      <%= f.label :title, "タイトル" %>
+    </div>
+    <div>
+      <%= f.text_field :title, placeholder: "タイトル入力" %>
+    </div>
+    <div>
+      <%= f.label :content, "投稿内容" %>
+    </div>
+    <div>
+      <%= f.text_field :content, placeholder: "投稿入力" %>
+    </div>
+    <%= f.submit nil %>
+  <% end %>
+</div>

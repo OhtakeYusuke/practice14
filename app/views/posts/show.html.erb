@@ -1,0 +1,13 @@
+<h1>投稿詳細</h1>
+<div>
+  <%= @post.title%>
+</div>
+<div>
+  <%= @post.content%>
+</div>
+<div>
+  <%= link_to '編集', edit_post_path %>
+</div>
+<div>
+  <%= link_to '削除', post_path, method: :delete %>
+</div>
