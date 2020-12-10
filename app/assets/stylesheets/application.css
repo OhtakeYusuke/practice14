@@ -2,6 +2,20 @@ body{
   margin: 0px;
   padding: 15px;
   font-weight: bolder;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+  color: black;
 }
 
 #index {
@@ -14,4 +28,105 @@ body{
   line-height: 70px;
   margin: 10px auto;
   border-bottom: 2px solid darkgray;
+}
+
+.title{
+  width: 40%;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 10px;
+}
+
+.text-field{
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 10px;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: 10px;
+  background-color: darkred;
+  font-size: 8px;
+  color: antiquewhite;
+}
+
+#header ul{
+  display: flex;
+}
+
+#header li{
+  margin-right: 40px;
+}
+
+#open{
+  display: none;
+}
+
+.overray {
+  display: none;
+}
+
+@media (max-width: 900px){
+  #open{
+    display: block;
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .hide{
+    opacity: 0;
+
+  }
+
+  #header .pc-menu{
+    display: none;
+  }
+
+  .overray {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 200px;
+    height: 500px;
+    border-radius: 20px;
+    opacity: 0;
+    text-align: center;
+    background-color: darkred;
+    z-index: 10;
+    pointer-events: none;
+    transition: .6s;
+  }
+  .overray li{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin-top: 40px;
+  }
+
+  .overray li :hover{
+    color: blanchedalmond;
+    transition: .3s;
+  }
+
+  .show {
+    opacity: 0.95;
+    pointer-events: auto;
+  }
+  
+  .close {
+    cursor: pointer;
+    position: fixed;
+    top: 45px;
+    right: 35px;
+  }
 }

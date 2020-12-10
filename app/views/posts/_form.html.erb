@@ -5,14 +5,14 @@
       <%= f.label :title, "タイトル" %>
     </div>
     <div>
-      <%= f.text_field :title, placeholder: "タイトル入力" %>
+      <%= f.text_field :title, placeholder: "タイトル入力", class: "title" %>
     </div>
     <div>
       <%= f.label :content, "投稿内容" %>
     </div>
     <div>
-      <%= f.text_field :content, placeholder: "投稿入力" %>
+      <%= f.text_field :content, placeholder: "投稿入力", class: "text-field" %>
     </div>
-    <%= f.submit nil %>
+    <%= f.submit nil, class: "button" %>
   <% end %>
 </div>
