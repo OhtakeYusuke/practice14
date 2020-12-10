@@ -18,8 +18,18 @@ a{
   color: black;
 }
 
+.post-title :hover{
+  color: cornflowerblue;
+  cursor: pointer;
+  transition: .4s;
+}
+
 #index {
   margin: 10px;
+}
+
+.post-user-name :hover{
+  color: darkred;
 }
 
 #header {
@@ -64,6 +74,10 @@ a{
   margin-right: 40px;
 }
 
+#header li :hover{
+  color: cornflowerblue;
+}
+
 #open{
   display: none;
 }
@@ -75,9 +89,8 @@ a{
 @media (max-width: 900px){
   #open{
     display: block;
-    font-size: 60px;
     position: absolute;
-    top: 10px;
+    top: 60px;
     right: 30px;
     cursor: pointer;
   }
@@ -106,16 +119,23 @@ a{
     pointer-events: none;
     transition: .6s;
   }
-  .overray li{
+  .overray ul{
     position: relative;
     top: 20px;
     right: 20px;
     margin-top: 40px;
   }
+  .overray li{
+    margin-top: 20px;
+  }
 
   .overray li :hover{
     color: blanchedalmond;
     transition: .3s;
+  }
+
+  .sp-menu h3 {
+    margin-left: 8px;
   }
 
   .show {
