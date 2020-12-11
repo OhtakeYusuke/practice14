@@ -5,6 +5,6 @@
               password_confirmation: "password#{i}")
 end
 
-10.times do |i|
+100.times do |i|
   Post.create!(title: "TEST_TITLE#{i}", content: "CONTENT#{i}", user_id: 1)
 end

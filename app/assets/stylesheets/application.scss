@@ -1,3 +1,6 @@
+@import "users";
+@import "posts";
+
 body{
   margin: 0px;
   padding: 15px;
@@ -42,6 +45,7 @@ a{
 
 .title{
   width: 40%;
+  height: 40px;
   border-radius: 5px;
   padding: 4px;
   margin: 10px;

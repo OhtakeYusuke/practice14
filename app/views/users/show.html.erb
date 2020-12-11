@@ -1,0 +1,12 @@
+<h1>ユーザ詳細</h1>
+<p>
+  <%= @user.name %>
+</p>
+
+
+<h1>ユーザ投稿詳細</h1>
+<% @user.posts.each do |post| %>
+  <div class="user-posts">
+    <%= post.title %>
+  </div>
+<% end %>
