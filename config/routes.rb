@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/chat", to: "messages#show"
+  mount ActionCable.server => "/cable"
+  
   root to: "posts#index"
   resources :posts
   devise_for :users, :controllers => {
