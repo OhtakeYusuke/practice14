@@ -1,8 +1,11 @@
 <h1>チャット機能テスト</h1>
+<form>
+  <input type="text" data-behavior="room_speaker" placeholder="チャット送信" class="chat-submit" id="chat-field">
+  <input type="button" value="送信" id="submit" class="button">
+  <p id="count"></p>
+</form>
 <div id='messages'>
   <%= render @messages %>
 </div>
-
-<form>
-  <input type="text" data-behavior="room_speaker">
-</form>
+<%= paginate @messages %>
+<%= page_entries_info @messages %>

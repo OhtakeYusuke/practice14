@@ -6,6 +6,7 @@ body{
   padding: 15px;
   font-weight: bolder;
   text-decoration: none;
+  background-color: rgb(241, 228, 228);
 }
 ul{
   list-style: none;
@@ -27,8 +28,26 @@ a{
   transition: .4s;
 }
 
+#count {
+  margin: 5px 10px;
+  display: inline-block;
+}
+
 #index {
-  margin: 10px;
+  width: 300px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.index :hover{
+  
+  background-color: rgb(247, 178, 178);
+  transition: .4s;
 }
 
 .post-user-name :hover{
@@ -153,4 +172,21 @@ a{
     top: 45px;
     right: 35px;
   }
+}
+
+.chat-submit{
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 300px;
+  height: 60px;
+  padding: 8px;
+  margin: 10px;
+}
+
+.message{
+  border: 2px solid darkred;
+  width: 80%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
 }

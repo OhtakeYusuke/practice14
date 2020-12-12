@@ -13,9 +13,8 @@ module ApplicationCable
       verified_user
     end
 
-    def session
-      cookies.encrypted[Rails.application.config.session_options[:key]]
-    end
+    # def session
+    #   cookies.encrypted[Rails.application.config.session_options[:key]]
+    # end
   end
 end
-

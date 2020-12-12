@@ -6,19 +6,24 @@
   <%= f.submit "検索", class: "button" %>
 </div>
 <% end %>
-<% @posts.each do |post| %>
-  <div id="index">
-    <div class="post-user-name">
-      <%= link_to post.user.name, user_path(post.user) %>
-    </div>
-    <div class="post-title">
-      <%= link_to post.title, post_path(post) %>
-    </div>
-    <div>
-      <%= post.content %>
-    </div>
-  </div>
-<% end %>
 
-<%= paginate @posts %>
-<%= page_entries_info @posts %>
+<div>
+  <% @posts.each do |post| %>
+    <section class="index" id="index">
+      <div class="post-user-name">
+        <%= link_to post.user.name, user_path(post.user) %>
+      </div>
+      <div class="post-title">
+        <%= link_to post.title, post_path(post) %>
+      </div>
+      <div>
+        <%= post.content %>
+      </div>
+    </section>
+  <% end %>
+</div>
+
+<div>
+  <%= paginate @posts %>
+  <%= page_entries_info @posts %>
+</div>
