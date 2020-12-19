@@ -1,0 +1,11 @@
+<%= form_with model: @youtube, local: true do |f| %>
+  <div>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </div>
+  <div>
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+  </div>
+  <%= f.submit "投稿" %>
+<% end %>

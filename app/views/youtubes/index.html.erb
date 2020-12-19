@@ -1,0 +1,14 @@
+<h1>YouTube実験</h1>
+<%= link_to 'YouTube登録', new_youtube_path %>
+
+<div>
+  <% @youtubes.each do |yt| %>
+    <div>
+      <%= yt.body %>
+    </div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/<%= yt.url_id %>" width="600"  height="300"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+  <% end %>  
+</div>
