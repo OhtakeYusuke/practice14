@@ -1,0 +1,92 @@
+
+.yt-main{
+  border-radius: 5px;
+}
+
+.yt-block{
+  margin: 30px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.pre-yt-btn{
+  background-color:darkred;
+  border-radius: 5px;
+  color: whitesmoke;
+  width: 120px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#modal-btn{
+  cursor: pointer;
+  background-color:darkred;
+  border-radius: 5px;
+  color: whitesmoke;
+  width: 200px;
+  height: 40px;
+  margin: 30px 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#modal-btn:hover{
+  background-color: rgb(125, 19, 19);
+  opacity: 0.75;
+  transition: .3s;
+}
+
+#modal-mask{
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#modal{
+  background-color: whitesmoke;
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  transition: transform .4s;
+  z-index: 2;
+}
+
+#modal-close-btn{
+  cursor: pointer;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  color: antiquewhite;
+  background-color: lightslategray;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
+#modal-close-btn:hover{
+  background-color: rgb(88, 107, 127);
+  opacity: 0.5;
+  transition: .3s;
+}
+
+#modal-mask.hidden{
+  display: none;
+}
+
+#modal.hidden{
+  transform: translateY(-500px);
+}

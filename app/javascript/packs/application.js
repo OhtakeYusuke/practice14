@@ -16,4 +16,21 @@ document.addEventListener("turbolinks:load", function(){
     overray.classList.remove("show");
     open.classList.remove("hide");
   });
+
+  const mdMask = document.getElementById("modal-mask");
+  const mdOpen = document.getElementById("modal-btn");
+  const mdClose = document.getElementById("modal-close-btn");
+  const modal = document.getElementById("modal");
+  mdOpen.addEventListener("click", ()=>{
+    mdMask.classList.remove("hidden");
+    modal.classList.remove("hidden");
+  });
+  mdClose.addEventListener("click", ()=>{
+    mdMask.classList.add("hidden");
+    modal.classList.add("hidden");
+  });
+  mdMask.addEventListener("click", ()=>{
+    mdMask.classList.add("hidden");
+    modal.classList.add("hidden");
+  });
 });

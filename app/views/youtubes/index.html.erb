@@ -1,14 +1,36 @@
+<div id="modal-btn">
+  モーダルを開く実験
+</div>
+<div id="modal-mask" class="hidden"></div>
+<section id="modal" class="hidden">
+  <div>
+    モーダル 実験例文
+  </div>
+  <div id="modal-close-btn" >
+    close
+  </div>
+</section>
+
 <h1>YouTube実験</h1>
 <%= link_to 'YouTube登録', new_youtube_path %>
 
 <div>
   <% @youtubes.each do |yt| %>
+  <div class="yt-block">
     <div>
-      <%= yt.body %>
+      <p>
+        TAITLE:<%= yt.body %>
+      </p>
     </div>
     <div>
-      <iframe src="https://www.youtube.com/embed/<%= yt.url_id %>" width="600"  height="300"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="yt-main" src="https://www.youtube.com/embed/<%= yt.url_id %>" width="600"  height="300"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div>
+      <div class="yt-byn<% yt.id %> pre-yt-btn">
+        <%= yt.id %>
+      </div>
+    </div>
+  </div>
     
   <% end %>  
 </div>
