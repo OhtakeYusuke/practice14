@@ -1,3 +1,15 @@
+.video-container{
+  display: flex;
+}
+
+.video-information{
+  margin-left: 10%;
+  width: 40%;
+}
+
+.video-main{
+  margin-left: 10%;
+}
 
 .yt-main{
   border-radius: 5px;
@@ -8,6 +20,12 @@
   background-color: whitesmoke;
   border-radius: 5px;
   padding: 20px;
+}
+
+.video-title{
+  font-size: 18px;
+  border-bottom: 2px solid darkslategray;
+  padding-bottom: 5px;
 }
 
 
@@ -89,4 +107,12 @@
 
 #modal.hidden{
   transform: translateY(-500px);
+}
+
+.triangle{
+  margin: 10px auto;
+  width: 0;
+  border-bottom: 50px solid darkred;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
 }

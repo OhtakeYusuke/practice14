@@ -17,20 +17,30 @@
 <div>
   <% @youtubes.each do |yt| %>
   <div class="yt-block">
-    <div>
-      <p>
-        TAITLE:<%= yt.body %>
-      </p>
-    </div>
-    <div>
-      <iframe class="yt-main" src="https://www.youtube.com/embed/<%= yt.url_id %>" width="600"  height="300"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div>
-      <div class="yt-byn<% yt.id %> pre-yt-btn">
-        <%= yt.id %>
+    <div class="video-container">
+      <div class="video-information">
+        <div>
+          <p class="video-title">
+            <%= yt.body %>
+          </p>
+        </div>
+        <div>
+          <div class="yt-byn<% yt.id %> pre-yt-btn">
+            <%= yt.id %>
+          </div>
+          <div>
+            <%= link_to '動画詳細', youtube_path(yt) %>
+          </div>
+        </div>
+      </div>
+      <div class="video-main">
+        <iframe class="yt-main" src="https://www.youtube.com/embed/<%= yt.url_id %>" width="400"  height="200"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
-    
   <% end %>  
+</div>
+
+<div class="triangle">
+
 </div>

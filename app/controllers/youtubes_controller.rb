@@ -15,7 +15,7 @@ class YoutubesController < ApplicationController
   end
 
   def show
-
+    @youtube = Youtube.find_by(id: params[:id])
   end
 
   def edit
