@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  # デプロイテスト
   before_action :set_id, only: [:show, :edit, :update, :destroy]
   PER_PAGE = 10
   def index
